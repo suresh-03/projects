@@ -10,7 +10,7 @@ init = 0
 index = 1
 # value2 would be list_numbers[0] if init increases the 0 is replaced with increased numbers
 value2 = list_numbers[init]
-out = 10
+out = int(input("enter the output:"))
 while True:
     value1 = list_numbers[index]
     if list_numbers[init] == list_numbers[index]:
