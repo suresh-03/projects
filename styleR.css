@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(100deg, #333399, #ff00cc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-card {
+    width: 370px;
+    background: rgba(255, 255, 255, .5);
+    padding: 4rem;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 400px;
+}
+
+.register-card::before {
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, .15);
+    inset: 0;
+    transform: rotate(-5deg);
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.register-card-header {
+    text-align: center;
+}
+
+.register-card-logo img {
+    width: 60px;
+    border-radius: 20px;
+}
+
+.register-card-logo {
+    text-align: center;
+    margin-top: -40px;
+}
+
+.register-data input {
+    border-radius: 100px;
+    margin-top: 1rem;
+    width: 350px;
+    height: 30px;
+    padding-left: 20px;
+    border-color: rgba(255, 255, 255, .15);
+    background: rgba(255, 255, 255, .3);
+}
+
+.register-button button {
+    margin-top: 2rem;
+    width: 150px;
+    height: 40px;
+    border-radius: 100px;
+    background: black;
+    color: white;
+    font-variant: small-caps;
+}
+
+.register-card-footer {
+    margin-top: 10px;
+}
+
+.register-card-footer a {
+    color: blue;
+}
+
+.register-card-footer a:hover {
+    text-decoration: underline;
+}
+
+.register-card-footer a:active {
+    color: #ff00cc;
+}
+
+.register-button button:active {
+    background: rgba(255, 255, 255, .15);
+}
+
+.register-data input:hover {
+    background: azure;
+}
+
+.register-data .form-item .form-item-icon {
+    position: absolute;
+    top: .82rem;
+    font-size: 1.3rem;
+    opacity: .8;
+    padding-left: 10px;
+    color: rebeccapurple;
+    padding-top: -4px;
+}
