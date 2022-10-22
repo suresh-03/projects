@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Light</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="traffic-light" style="user-select: none;">
+        <div class="road-vertical">
+            <div class="white-line-v1"></div>
+            <div class="white-line-v2"></div>
+            <div class="white-line-v3"></div>
+        </div>
+        <div class="road-horizontal-left">
+            <div class="white-line-left-h1"></div>
+            <div class="white-line-left-h2"></div>
+            <div class="white-line-left-h3"></div>
+        </div>
+        <div class="road-horizontal-right">
+            <div class="white-line-right-h1"></div>
+            <div class="white-line-right-h2"></div>
+            <div class="white-line-right-h3"></div>
+        </div>
+        <div class="signal-body-leftTop">
+            <div class="red-leftTop" id="red-LT"></div>
+            <div class="yellow-leftTop" id="yellow-LT"></div>
+            <div class="green-leftTop" id="green-LT"></div>
+            <div class="leftTop-countBox">
+                <div class="count-num-LT" id="timer-LT">0</div>
+            </div>
+            <div class="leftTop-human">
+                <div class="human-LT">
+                    <svg height="80" width="80">
+                        <g id="human-LT">
+                            <polyline id="human-LT-body" points="10 40,17 40,40 60,17 40,40 20,17 40,60 40"
+                                style="stroke: #221f1f; stroke-linecap:round; stroke-width:8"></polyline>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="signal-body-rightTop">
+            <div class="red-rightTop" id="red-RT"></div>
+            <div class="yellow-rightTop" id="yellow-RT"></div>
+            <div class="green-rightTop" id="green-RT"></div>
+            <div class="rightTop-countBox">
+                <div class="count-num-RT" id="timer-RT">0</div>
+            </div>
+            <div class="rightTop-human">
+                <div class="human-RT">
+                    <svg height="80" width="80">
+                        <g id="human-RT">
+                            <polyline id="human-RT-body" points="30 10,30 15,10 30,30 15,50 30,30 15,30 60"
+                                style="stroke:#221f1f; stroke-linecap:round; stroke-width:8"></polyline>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="signal-body-leftBottom">
+            <div class="red-leftBottom" id="red-LB"></div>
+            <div class="yellow-leftBottom" id="yellow-LB"></div>
+            <div class="green-leftBottom" id="grreen-LB"></div>
+            <div class="leftBottom-countBox">
+                <div class="count-num-LB" id="timer-LB">0</div>
+            </div>
+            <div class="leftBottom-human">
+                <div class="human-LB">
+                    <svg height="80" width="80">
+                        <g id="human-LB">
+                            <polyline id="human-LB-body" points="30 80,30 75,50 60,30 75,10 60,30 75,30 30"
+                                style="stroke: #221f1f; stroke-linecap:round; stroke-width:8"></polyline>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+        <div class="signal-body-rightBottom">
+            <div class="red-rightBottom" id="red-RB"></div>
+            <div class="yellow-rightBottom" id="yellow-RB"></div>
+            <div class="green-rightBottom" id="green-RB"></div>
+            <div class="rightBottom-countBox">
+                <div class="count-num-RB" id="timer-RB">0</div>
+            </div>
+            <div class="rightBottom-human">
+                <div class="human-RB">
+                    <svg height="80" width="80">
+                        <g id="human-RB">
+                            <circle id="human-RB-head" r="10" cx="30" cy="30"></circle>
+                            <polyline id="human-RB-body" points="15 40,60 40,70 40,60 40,50 60,60 40,50 20"
+                                style="stroke: #221f1f; stroke-linecap:round; stroke-width:8"></polyline>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
