@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch StringArraysAreEqual",
+            "request": "launch",
+            "mainClass": "StringArraysAreEqual",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "Launch MatrixDiagonalSum",
             "request": "launch",
             "mainClass": "MatrixDiagonalSum",

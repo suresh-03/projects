@@ -1,11 +1,11 @@
 public class MatrixDiagonalSum {
     public static void main(String[] args) {
         int[][] matrix = {
-                { 1, 1, 1, 1 },
-                { 1, 1, 1, 1 },
-                { 1, 1, 1, 1 },
-                { 1, 1, 1, 1 },
-
+                { 1, 1, 1, 1, 1 },
+                { 1, 1, 1, 1, 1 },
+                { 1, 1, 1, 1, 1 },
+                { 1, 1, 1, 1, 1 },
+                { 1, 1, 1, 1, 1 }
         };
 
         int solution = diagonalSum(matrix);
