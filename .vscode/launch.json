@@ -6,6 +6,19 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch arrayIn2D",
+            "request": "launch",
+            "mainClass": "arrayIn2D",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Launch CellsWithOddValues",
+            "request": "launch",
+            "mainClass": "CellsWithOddValues"
+        },
+        {
+            "type": "java",
             "name": "Launch AdditionIn2Darray",
             "request": "launch",
             "mainClass": "AdditionIn2Darray",
