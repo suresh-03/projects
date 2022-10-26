@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ArrayForm",
+            "request": "launch",
+            "mainClass": "ArrayForm",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "Launch TransposeMatrix",
             "request": "launch",
             "mainClass": "TransposeMatrix",
