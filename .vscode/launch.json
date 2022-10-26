@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TransposeMatrix",
+            "request": "launch",
+            "mainClass": "TransposeMatrix",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "Launch ContinuousSubArray",
             "request": "launch",
             "mainClass": "ContinuousSubArray",
