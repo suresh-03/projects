@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ContinuousSubArray",
+            "request": "launch",
+            "mainClass": "ContinuousSubArray",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "Launch EvenNoOfDigits",
             "request": "launch",
             "mainClass": "EvenNoOfDigits",
