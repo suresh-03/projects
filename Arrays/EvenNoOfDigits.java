@@ -1,6 +1,6 @@
 public class EvenNoOfDigits {
     public static void main(String[] args) {
-        int[] arr = { 22, 4345, 678, 2352, 234523, 2345, 444 };
+        int[] arr = { 22, 4345, 678, 235, 2345, 444 };
         int solution = findNumbers(arr);
         System.out.println(solution);
     }
