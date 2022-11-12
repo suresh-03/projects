@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch SquareRoot",
+            "request": "launch",
+            "mainClass": "SquareRoot",
+            "projectName": "JAVA PROGRAMS_cfdfc671"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaxPopulationYear",
+            "request": "launch",
+            "mainClass": "MaxPopulationYear",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "Launch ArrayForm",
             "request": "launch",
             "mainClass": "ArrayForm",

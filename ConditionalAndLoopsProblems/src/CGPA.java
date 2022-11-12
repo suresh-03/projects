@@ -8,6 +8,7 @@ public class CGPA {
 		int total = 0;
 		int totCredit = 0;
 
+		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter the number of subjects:");
 

@@ -14,7 +14,7 @@ public class SumOfDigits {
 		int len = Temp.length();
 		
 		for(int i = 1; i <= len; i++) {
-			result += 1;
+			result += i;
 		}
 		System.out.println("The sum of " + Temp + " digits is " + result);
 	}
