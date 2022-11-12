@@ -1,0 +1,3 @@
+today i had learned about classes,instances,attributes,__init__ in python.
+i shared my progress in linkedin
+i got 1 like and 52 impressions

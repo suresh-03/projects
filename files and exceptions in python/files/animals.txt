@@ -1,0 +1,34 @@
+WILDANIMALS:
+    lion
+    tiger
+    giraffe
+    camel
+    monkey
+    zebra
+    bear
+    polarbear
+    leaopard
+    hyena
+    elephant
+    cheetah
+    kangaroo
+    penquin
+    wolf
+    gorilla
+    zimpanzee
+    yak
+    deer
+    hippopotamous
+    crocodile
+    aligator
+    squirrel
+DOMESTICANIMALS:
+    cow
+    bull
+    dog
+    cat
+    donkey
+    pig
+    horse
+    goat
+    buffalo
