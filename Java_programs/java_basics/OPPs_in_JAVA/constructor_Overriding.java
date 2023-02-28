@@ -25,6 +25,6 @@ class add3 extends addition{
 
 public class constructor_Overriding {
     public static void main(String[] args) {
-        new add3(4, 5, 6);
+        add3 o = new add3(4, 5, 6);
     }
 }

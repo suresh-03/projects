@@ -73,10 +73,10 @@ public class ClassAndObject {
         // student1.total = 8;
 
         // demo for Garbage collection
-        Garbage a;
+        GarbageCollector a;
 
         for(int i = 0; i < 1000000000; i++){
-            a = new Garbage();
+            a = new GarbageCollector();
         }
 
 
@@ -116,7 +116,7 @@ class Student {
   
 }
 
-class Garbage{
+class GarbageCollector{
 
     @Override
     protected void finalize() throws Throwable {
