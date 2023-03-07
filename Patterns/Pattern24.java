@@ -2,7 +2,7 @@ package Patterns;
 
 public class Pattern24 {
     public static void main(String[] args) {
-        print24(5);
+        print24(10);
     }
     static void print24(int n){
         for(int row = 1; row <= n; row++){
