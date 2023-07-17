@@ -304,4 +304,10 @@ table tr #up-del{
     left: 10px;
 }
 
+.side-bar-link:hover{
+    color: #efefef;
+    background-color:#1d9bf0;
+    padding: 8px;
+    border-radius: 8px;
+}
 
