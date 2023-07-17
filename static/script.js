@@ -9,7 +9,7 @@ function show(){
     close.style.cursor = "pointer";
     close.style.position = "relative";
     close.style.left = "60px";
-    close.onclick = closeBar(sideBar);
+    // close.onclick = closeBar(sideBar);
     close.style.marginTop = "90px";
     sideBar.appendChild(close);
     sideBar.id = "s-bar";
@@ -29,6 +29,3 @@ function show(){
 }
 
 
-function closeBar(ele){
-    ele.remove();
-}
