@@ -205,14 +205,15 @@ def issueBookMember():
                         flash(f"We Have Only {qty} Books!")
                     else:
                         cur.execute("SELECT member_id FROM member_details WHERE member_id = ?",(memberId))
-                        if cur.fetchone()[0]:
-                            flash(f"{bookQty} of {bookId} books issued to {memberId} Successfully!")
-                            cur.execute("SELECT book_qty FROM book_details WHERE book_id = ?",(bookId))
-                            qty = cur.fetchone()[0]
-                            cur.execute("UPDATE book_details SET book_qty = ? WHERE book_id = ?",((qty-int(bookQty)),bookId))
-                            cur.execute("INSERT INTO issue_details(book_id,member_id,due_date,book_qty)VALUES(?,?,?,?)",(bookId,memberId,dueDate,bookQty))
-                        else:
-                            flash(f"{memberId} is not a member of this library!")
+                        try:
+                            if cur.fetchone()[0]:
+                                flash(f"{bookQty} of {bookId} books issued to {memberId} Successfully!")
+                                cur.execute("SELECT book_qty FROM book_details WHERE book_id = ?",(bookId))
+                                qty = cur.fetchone()[0]
+                                cur.execute("UPDATE book_details SET book_qty = ? WHERE book_id = ?",((qty-int(bookQty)),bookId))
+                                cur.execute("INSERT INTO issue_details(book_id,member_id,due_date,book_qty)VALUES(?,?,?,?)",(bookId,memberId,dueDate,bookQty))
+                        except:
+                            flash(f"member {memberId} is not a member of this library!")
             except:   
                  flash("Book id is not exist!")
             con.commit()
