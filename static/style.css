@@ -1,0 +1,289 @@
+/* common for all pages */
+
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: #3d3d3d;
+}
+
+.navbar {
+    background-color: #0F1111;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    display: block;
+    opacity: 1;
+    z-index: 3;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0%;
+    position: relative;
+    top: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.navbar ul li {
+    margin-left: -20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul #logout {
+    margin-right: 20px;
+}
+
+.navbar ul #logout a {
+    transition: 0.3s;
+}
+
+.navbar ul #logout a:hover {
+    background-color: white;
+    color: #0F1111;
+    padding: 5px;
+    border-radius: 5px;
+    top: 10px;
+}
+
+.navbar ul li span {
+    color: white;
+    font-size: large;
+    position: relative;
+    top: 8px;
+    cursor: pointer;
+}
+
+/* style for home page */
+.books {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 523px;
+    top: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.books .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.3s;
+}
+
+.books img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: 0.3s;
+}
+
+
+.books h1 {
+    z-index: 2;
+    transition: transform .3s ease-in;
+}
+
+
+
+.books h1 a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.books .overlay:hover {
+    opacity: 0.6;
+}
+
+.books h1:hover {
+    transform: scale(1.2, 1.2);
+}
+
+/* ------------------------------------------------------------------------------------- */
+
+/* style for bookDetails page */
+
+.search {
+    display: flex;
+    justify-content: center;
+    background-color: #0F1111;
+    height: 80px;
+    top: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.search #srh {
+    width: 700px;
+    height: 50px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.search #sub {
+    height: 48px;
+    width: 90px;
+    top: 1px;
+    left: -1px;
+    position: relative;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    outline: none;
+    border-style: none;
+    color: white;
+    background-color: green;
+    opacity: 0.8;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.search #sub:hover {
+    opacity: 1;
+}
+
+.add-book-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    background-color: #efefef;
+    z-index: 1;
+    top: 160px;
+}
+
+.add-book-details a {
+    text-decoration: none;
+    background-color:#1d9bf0;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    transition: 0.3s;
+}
+
+.add-book-details a:hover {
+    opacity: 0.7;
+}
+
+.view-books {
+    position: relative;
+    top: 200px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.view-books table {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid #0F1111;
+    border-radius: 30px;
+}
+
+.view-books table th {
+    padding: 15px;
+    font-weight: bolder;
+    background-color: #3a9108;
+    border-radius: 10px;
+}
+
+
+.view-books table td{
+    padding-bottom: 40px;
+}
+
+.change{
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+}
+
+.change .update{
+    display: inline-block;
+}
+
+.change .delete{
+    display: inline-block;
+}
+
+.change .issue{
+    display: inline-block;
+}
+
+.change a{
+ color: white;
+ padding: 10px;
+ border-radius: 10px;
+ transition: 0.2s;
+ opacity: 0.8;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: small;
+ text-decoration: none;
+}
+
+.update a{
+    background-color: green;
+}
+
+.delete a{
+    background-color: red;
+}
+
+.issue a{
+    background-color: #1d9bf0;
+}
+
+.change a:hover{
+    opacity: 0.6;
+}
+
+table tr #up-del{
+    position: relative;
+    left: -125px;
+}
+
+#get{
+    text-decoration: none;
+    position: absolute;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0.8;
+    background-color:aqua;
+    color: #3d3d3d;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.2s;
+    left: 10px;
+}
+
+#get:hover{
+    color: #0F1111;
+    opacity: 1;
+}
+
+
+#up-del-mem{
+    position: relative ;
+    left: -190px;
+}
+
+.view-members table #center{
+    left: 10px;
+}
+
+

@@ -1,0 +1,47 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #3d3d3d;
+    margin: 0;
+}
+
+.main{
+    display: flex;
+    height: 600px;
+    width: 400px;
+    background-color: #efefef;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.main form input{
+   height: 50px;
+   width: 300px;
+   border-radius: 20px;
+   border:1px solid #3d3d3d;
+   margin-top: 20px;
+}
+
+.main form input::placeholder{
+    position: relative;
+    left: 20px;
+}
+
+.main form #submit{
+    border-style: none;
+    background-color: #298d29;
+    color: white;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    margin-top: 70px;
+    left: 3px;
+}
+
+.main form #submit:hover{
+    opacity: 0.7; 
+}

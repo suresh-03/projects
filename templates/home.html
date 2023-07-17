@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}
+Library Management System
+{% endblock title %}
+{% block content %}
+<div class="books">
+    <div class="overlay">
+        <a href="/bookDetails"><img src="../static/book.jpg" alt="" srcset=""></a>
+    </div>
+    <h1><a href="/bookDetails">Books</a></h1>
+</div>
+<div class="books">
+    <div class="overlay">
+        <a href="/memberDetails"><img src="../static/member.jpg" alt="" srcset=""></a>
+    </div>
+    <h1><a href="/memberDetails">Members</a></h1>
+</div>
+
+<div class="books">
+    <div class="overlay">
+        <a href="/viewIssuedBooks"><img src="../static/transaction.jpg" alt="" srcset=""></a>
+    </div>
+    <h1><a href="/viewIssuedBooks">Issued Books</a></h1>
+</div>
+
+{% endblock content %}

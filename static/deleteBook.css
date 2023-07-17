@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    background-color: #3d3d3d;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 400px;
+    background-color: #efefef;
+    border-radius: 30px;
+}
+
+.main form input{
+    height: 50px;
+    width: 300px;
+    border-style: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.main form #delete{
+    margin-top: 40px;
+    background-color: #e31212;
+    color: white;
+    width: 200px;
+    position: relative;
+    left: 50px;
+}
+
+.main form #delete:hover{
+    opacity: 0.8;
+}

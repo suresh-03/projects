@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %}
+Member Details
+{% endblock title %}
+{% block content %}
+<div class="search">
+    <input id="srh" type="search" placeholder="Search Member...">
+    <input id="sub" type="button" value="search">
+</div>
+<div class="add-book-details">
+    <a href="/addMemberDetails">Add Member Details</a>
+    <div class="change">
+        <div class="update">
+            <a href="/updateBook">Update</a>
+        </div>
+        <div class="delete">
+            <a href="/deleteBook">Delete</a>
+        </div>
+    </div>
+</div>
+<div class="view-books view-members">
+    <table>
+        <tr>
+        <th>Member ID</th>
+        <th id="center">Member Name</th>
+        <th>Email</th>
+        </tr>
+        
+    {% for row in rows %}
+        <tr>
+            <td align="center">{{row["member_id"]}}</td>
+            <td id="center" align="center">{{row["member_name"]}}</td>
+            <td align="center">{{row["email"]}}</td>
+        </tr>
+    {% endfor %}
+
+    </table>
+
+</div>
+{% endblock content %}
