@@ -1,4 +1,6 @@
-package Recursion.Patterns;
+package Patterns;
+
+
 
 public class PatternTriangle1 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Recursion.Array_ArrayList;
+package Array_ArrayList;
 
 public class SortedArrayCheck {
     public static void main(String[] args) {

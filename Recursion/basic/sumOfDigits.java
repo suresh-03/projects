@@ -1,4 +1,6 @@
-package Recursion.basic;
+package basic;
+
+
 
 public class sumOfDigits {
     public static void main(String[] args) {
