@@ -1,19 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Issue Return book</title>
-    <link rel="stylesheet" href="../static/addBookDetails.css">
-</head>
-<body>
+{% extends 'base.html' %}
+{% block title %}
+Issue Return
+{% endblock title %}
+{% block content %}
+
+<div class="contain">
     <div class="main">
         <form action="/returnBook" method="post">
+            <h2>Return Details</h2>
             <input type="text" placeholder="enter member id" name="memberid" required><br>
             <input type="text" placeholder="enter book id" name="bookId" required><br>
             <input type="number" placeholder="enter book quantity" name="bookQty" required><br>
             <input type="submit" id="submit"  value="Return Book">
         </form>
     </div>
+    </div>
 </body>
 </html>
+{% endblock content %}

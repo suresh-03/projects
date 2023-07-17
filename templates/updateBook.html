@@ -1,19 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Update Book Details</title>
-    <link rel="stylesheet" href="../static/updateBook.css">
-</head>
-<body>
+{% extends 'base.html' %}
+{% block title %}
+Update Book Details
+{% endblock title %}
+{% block content %}
+    <div class="contain">
     <div class="main">
         <form action="/updateBookData" method="post">
+            <h2>Book Details</h2>
             <input type="text" placeholder="enter book ID" name="bookId" required><br>
             <input type="text" placeholder="enter book Name" name="bookName" required><br>
             <input type="number" placeholder="enter book Quantity" name="bookQty" required><br>
             <input id="update" type="submit" value="Update">
         </form>
     </div>
-</body>
-</html>
+    </div>
+{% endblock content %}

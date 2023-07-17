@@ -1,20 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Book Details</title>
-    <link rel="stylesheet" href="../static/addBookDetails.css">
-</head>
-<body>
+{% extends 'base.html' %}
+{% block title %}
+Add Member Details
+{% endblock title %}
+{% block content %}
+
+<div class="contain">
     <div class="main">
         <form action="/memberData" method="post">
+            <h2>Member Details</h2>
+
             <input type="text" placeholder="enter member id" name="memberId" required><br>
             <input type="text" placeholder="enter member name" name="memberName" required><br>
             <input type="email" placeholder="enter member email" name="email" required><br>
             <input id="submit" type="submit" value="Add Details">
         </form>
-
     </div>
-</body>
-</html>
+</div>
+{% endblock content %}

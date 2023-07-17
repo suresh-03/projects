@@ -1,4 +1,7 @@
 /* common for all pages */
+@import url("../static/addDetails.css");
+@import url("../static/deleteDetails.css");
+@import url("../static/updateDetails.css");
 
 body {
     margin: 0%;
@@ -210,17 +213,18 @@ body {
 .view-books table {
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    border: 2px solid #0F1111;
-    border-radius: 30px;
+    border-collapse: collapse;
 }
 
 .view-books table th {
     padding: 15px;
     font-weight: bolder;
-    background-color: #3a9108;
-    border-radius: 10px;
+    background-color: #4dc309;
 }
 
+.view-books table tr:nth-child(even){
+    background-color: #767070;
+}
 
 .view-books table td{
     padding-bottom: 40px;
@@ -269,11 +273,6 @@ body {
 
 .change a:hover{
     opacity: 0.6;
-}
-
-table tr #up-del{
-    position: relative;
-    left: -125px;
 }
 
 #get{

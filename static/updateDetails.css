@@ -1,0 +1,13 @@
+
+.main form #update{
+    margin-top: 40px;
+    background-color: #291e;
+    color: white;
+    width: 200px;
+    position: relative;
+    left: 50px;
+}
+
+.main form #update:hover{
+    opacity: 0.8;
+}

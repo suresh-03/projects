@@ -1,0 +1,13 @@
+
+.main form #delete{
+    margin-top: 40px;
+    background-color: #e31212;
+    color: white;
+    width: 200px;
+    position: relative;
+    left: 50px;
+}
+
+.main form #delete:hover{
+    opacity: 0.8;
+}
