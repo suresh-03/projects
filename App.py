@@ -213,7 +213,7 @@ def getIssueDetails():
     cur = con.cursor()  
     # cur.execute("SELECT book_details.book_id,book_details.book_name,issue_details.member_id,member_details.member_name,member_details.email,issue_details.book_qty,issue_details.due_date FROM book_details INNER JOIN issue_details ON book_details.book_id = issue_details.book_id INNER JOIN member_details ON member_details.member_id = issue_details.member_id"
 
-    cur.execute("SELECT issue_details.book_id,book_details.book_name,issue_details.member_id,member_details.member_name,member_details.email,issue_details.due_date,issue_details.book_qty from issue_details,book_details,member_details WHERE issue_details.book_id = book_details.book_id")
+    cur.execute("SELECT issue_details.book_id,book_details.book_name,issue_details.member_id,member_details.member_name,member_details.email,issue_details.due_date,issue_details.book_qty from issue_details,book_details,member_details WHERE issue_details.book_id = book_details.book_id and issue_details.member_id = member_details.member_id")
     rows = cur.fetchall()
 
     return render_template("issueMoreInfo.html",rows = rows)
