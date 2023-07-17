@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue Return book</title>
+    <link rel="stylesheet" href="../static/addBookDetails.css">
+</head>
+<body>
+    <div class="main">
+        <form action="/returnBook" method="post">
+            <input type="text" placeholder="enter member id" name="memberid" required><br>
+            <input type="text" placeholder="enter book id" name="bookId" required><br>
+            <input type="number" placeholder="enter book quantity" name="bookQty" required><br>
+            <input type="submit" id="submit"  value="Return Book">
+        </form>
+    </div>
+</body>
+</html>

@@ -227,8 +227,78 @@ def viewIssued():
     rows = cur.fetchall()  
     return render_template("issuedDetails.html",rows = rows)
 
+@app.route("/deleteIssue")
+def deleteIssue():
+    return render_template("deleteIssue.html")
+
+@app.route("/deleteIssueData",methods=["GET","POST"])
+def deleteIssueData():
+       if request.method == "POST":
+        memberId = request.form["memberId"]
+        bookId = request.form["bookId"]
+        with sqlite3.connect("library.db") as con:
+            try:
+                cur = con.cursor()
+                cur.execute("DELETE FROM issue_details WHERE member_id = ? and book_id = ?",(memberId,bookId))
+                con.commit()
+            except:
+                con.rollback()
+            finally:
+                return redirect(url_for("viewIssued"))
+
+@app.route("/issueReturn")
+def issueReturn():
+    return render_template("issueReturn.html")
+
+@app.route("/returnBook",methods=["GET","POST"])
+def returnBook():
+    msg = ""
+    if request.method == "POST":
+        bookId = request.form["bookId"]
+        memberId = request.form["memberid"]
+        bookQty = request.form["bookQty"]
+        with sqlite3.connect("library.db") as con:
+            cur = con.cursor()
+            cur.execute("SELECT book_id FROM book_details WHERE book_id = ?",(bookId))
+            try:
+                if cur.fetchone()[0]:
+                    cur.execute("SELECT book_qty FROM book_details WHERE book_id = ?",(bookId))
+                    qty = cur.fetchone()[0]
+                    cur.execute("SELECT member_id FROM member_details WHERE member_id = ?",(memberId))
+                    try:
+                        if cur.fetchone()[0]:
+                            msg = f"{bookQty} of {bookId} books returned from {memberId} Successfully!"
+                            cur.execute("SELECT book_qty FROM book_details WHERE book_id = ?",(bookId))
+                            qty = cur.fetchone()[0]
+                            cur.execute("UPDATE book_details SET book_qty = ? WHERE book_id = ?",((qty+int(bookQty)),bookId))
+                            cur.execute("SELECT book_qty FROM issue_details WHERE book_id = ? and member_id = ?",(bookId,memberId))
+                            try:
+                                qtyIssue = cur.fetchone()[0]
+                                if qtyIssue < int(bookQty):
+                                    msg=f"You Didn't have {bookQty} books to return!"
+                                else:
+                                    finalData = qtyIssue - int(bookQty)
+                                    cur.execute("UPDATE issue_details SET book_qty = ? WHERE book_id = ? and member_id = ?",(finalData,bookId,memberId))
+                                    cur.execute("SELECT book_qty FROM issue_details WHERE book_id = ? and member_id = ?",(bookId,memberId))
+                                    qtyIssue = cur.fetchone()[0]
+                                    if qtyIssue <= 0:
+                                        msg="You Didn't have any books to return!"
+                                        cur.execute("DELETE FROM issue_details WHERE book_id = ? and member_id = ?",(bookId,memberId))
+                            except:
+                                msg = "book id not exist!"
+
+                    except:
+                        msg = f"{memberId} is not a member of this library!"
+            except:   
+                msg = "Book id is not exist!"
+                print(msg)
+            con.commit()
+    return redirect(url_for("viewBooks"))
+
+
+
 @app.route("/logout")
-def logout():
+def logout(): 
     msg = ""
     session.pop("user",None)
     msg = "logged out successfully!"
