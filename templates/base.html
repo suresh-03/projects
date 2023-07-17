@@ -10,7 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 
-<body id="body">
+<body onclick="removeMsg()" id="body">
     <div class="container">
         <span id="menu" onclick="decide()" class="material-symbols-outlined">
             menu
@@ -27,8 +27,18 @@
                 </li>
             </ul>
         </div>
+        <div id="message" class="message">
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            {% for msg in messages %}
+            <h2 id="msg">{{msg}}</h2>
+            {% endfor %}
+            {% endif %}
+            {% endwith %}
+        </div>
         {% block content %}{% endblock content %}
     </div>
+  
     <div id="side-bar"></div>
     <script src="{{url_for('static',filename='script.js')}}"></script>
 </body>

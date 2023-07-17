@@ -71,4 +71,11 @@ function closeBar(){
     open = false;
 }
 
+function removeMsg(){
+    document.getElementById("msg").remove();
+    var h2 = document.createElement("h2");
+    h2.id = "msg";
+    document.getElementById("message").appendChild(h2);
+}
+
 
