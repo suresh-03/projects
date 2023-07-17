@@ -27,6 +27,12 @@ body {
     font-size: 20px;
 }
 
+.navbar ul #lib{
+    position: relative;
+    top: 10px;
+    left: 35px;
+}
+
 .navbar ul li {
     margin-left: -20px;
 }
@@ -58,6 +64,18 @@ body {
     position: relative;
     top: 8px;
     cursor: pointer;
+}
+
+#menu{
+    color: white;
+    font-size: large;
+    position: absolute;
+    position: fixed;
+    top: 25px;
+    left: 20px;
+    cursor: pointer;
+    display: inline;
+    z-index: 4;
 }
 
 /* style for home page */

@@ -12,12 +12,12 @@
 
 <body id="body">
     <div class="container">
-        <div class="navbar">
+        <span id="menu" onclick="decide()" class="material-symbols-outlined">
+            auto_stories
+        </span>
+        <div onclick="closeBar()" class="navbar">
             <ul>
-                <li>
-                    <span id="menu" onclick="show()" class="material-symbols-outlined">
-                        auto_stories
-                    </span>
+                <li id="lib">
                     <a href="/">Library Management System</a>
                 </li>
                 <li id="logout"><a href="/logout">logout</a>
