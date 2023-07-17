@@ -35,7 +35,7 @@ function show(){
         link.href = linkList[i];
         link.innerText = linkName[i];
         link.style.color = "black";
-        link.style.fontSize = "smaller";
+        link.style.fontSize = "xx-small";
         link.style.textDecoration = "none";
         link.style.fontFamily = "Arial, Helvetica, sans-serif";
         link.style.transition = "0.25s";
