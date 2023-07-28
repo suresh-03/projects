@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #3d3d3d;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    position: relative;
+    padding: 10px;
+    width: 300px;
+}
+
+.main button{
+    height: 100px;
+    width: 100px;
+    border-radius: 30px;
+    border-style: none;
+}
+
+.main button .icon1{
+    font-size: 50px;
+}
+.main button .icon2{
+    font-size: 50px;
+}
+.main button .icon3{
+    font-size: 50px;
+}
+.reset button .icon4{
+    font-size: 50px;
+}
+.reset{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    position: absolute;
+}
+
+.reset button{
+    height: 100px;
+    width: 100px;
+    border-radius: 30px;
+    border-style: none;
+}
+
+.main .paper{
+    padding: 10px;
+}
+
+.main .player-score{
+    text-align: center;
+    border-radius: 30px;
+    display: inline-block;
+    position: relative;
+  background-color: rgba(0, 0, 255, 0.551);
+  right: 100px;
+  padding: 50px;
+  color: white;
+  opacity: 0.8;
+    
+}
+
+.main .computer-score{
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    background-color: rgba(0, 0, 255, 0.551);
+    left: 100px;
+    padding: 50px;
+    border-radius: 30px;
+    color: white;
+    opacity: 0.8;
+}
+
+.main .p-name{
+    position: absolute;
+    top: 170px;
+    color: yellow;
+}
+
+.main .c-name{
+    position: absolute;
+    top: 170px;
+    left: 38px;
+    color: cyan;
+   
+}
+
+.main #c-choice{
+    position: absolute;
+    top: -50px;
+    left: 60px;
+}
+
+.main #p-choice{
+    position: absolute;
+    top: -50px;
+    left: 60px;
+}
+
+#message{
+    position: absolute;
+    top: 150px;
+    background-image: linear-gradient(135deg,yellow 50%,cyan);
+    height: 200px;
+    width: 500px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    opacity: 0.5;
+    font-size: 25px;
+    font-style: italic;
+    color: black;
+    font-weight: 300;
+}
