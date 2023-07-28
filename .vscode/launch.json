@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "checkArraySorted",
+      "request": "launch",
+      "mainClass": "checkArraySorted",
+      "projectName": "DATASTRUCTURES_IN_JAVA_fb8ffc00"
+    },
+    {
+      "type": "java",
+      "name": "checkPrime",
+      "request": "launch",
+      "mainClass": "checkPrime",
+      "projectName": "DATASTRUCTURES_IN_JAVA_fb8ffc00"
+    },
+    {
+      "type": "java",
       "name": "lengthOfString",
       "request": "launch",
       "mainClass": "lengthOfString",
