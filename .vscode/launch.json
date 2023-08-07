@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "mergeSortInPlace",
+      "request": "launch",
+      "mainClass": "mergeSortInPlace",
+      "projectName": "DATASTRUCTURES_IN_JAVA_fb8ffc00"
+    },
+    {
+      "type": "java",
       "name": "checkArraySorted",
       "request": "launch",
       "mainClass": "checkArraySorted",
