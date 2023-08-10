@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "SubSequences",
+      "request": "launch",
+      "mainClass": "SubSequences",
+      "projectName": "DATASTRUCTURES_IN_JAVA_fb8ffc00"
+    },
+    {
+      "type": "java",
+      "name": "QuickSort",
+      "request": "launch",
+      "mainClass": "QuickSort",
+      "projectName": "DATASTRUCTURES_IN_JAVA_fb8ffc00"
+    },
+    {
+      "type": "java",
       "name": "mergeSortInPlace",
       "request": "launch",
       "mainClass": "mergeSortInPlace",
