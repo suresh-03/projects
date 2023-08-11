@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "subSets",
+      "request": "launch",
+      "mainClass": "Strings.subSets",
+      "projectName": "DATASTRUCTURES_IN_JAVA_fb8ffc00"
+    },
+    {
+      "type": "java",
+      "name": "SubsetPattern",
+      "request": "launch",
+      "mainClass": "Array_ArrayList.SubsetPattern",
+      "projectName": "DATASTRUCTURES_IN_JAVA_fb8ffc00"
+    },
+    {
+      "type": "java",
       "name": "SubSet",
       "request": "launch",
       "mainClass": "Array_ArrayList.SubSet",
